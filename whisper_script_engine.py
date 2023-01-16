@@ -18,12 +18,9 @@ class WhisperRT_ScriptEngine:
         # This is so basic, I'm so sorry
         # Search:
         for s in search:
-            print(s)
-            print(text)
             if s in text:
                 n = text.index(s)
                 textn=base_text[n+len(s)+1:]
-                print('dd')
                 webbrowser.open("https://www.google.com/search?q="+urllib.parse.quote(textn))
                 return
                 
